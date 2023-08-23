@@ -1,10 +1,10 @@
 {
   "name": "@nimbushq/nimbus-cli",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "Kevin <kevin@dendron.so>",
-  "homepage": "",
-  "license": "ISC",
+  "description": "This is a grab bag of CLI helpers for various [nimbus](https://github.com/nimbusproject/nimbus) projects",
+  "author": "Kevin <kevin@nimbus.dev>",
+  "homepage": "https://nimbus.dev",
+  "license": "Apache-2.0",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
