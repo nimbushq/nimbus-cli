@@ -2,6 +2,8 @@
 
 This is a grab bag of CLI helpers for various [nimbus](https://github.com/nimbusproject/nimbus) projects.
 
+It is currently used to generate the json schema for the [otel-validator](https://github.com/nimbushq/otel-validator)
+
 ## Quickstart
 
 ```sh
