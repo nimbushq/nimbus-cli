@@ -15,7 +15,7 @@ yargs(hideBin(process.argv))
     (yargs) => {
       return yargs
         .option('metadata-dir', {
-          describe: 'The directory where YAML metadata',
+          describe: 'The directory where YAML metadata files are located. This is the output of https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/configschema/cfgmetadatagen/cfgmetadatagen',
           type: 'string',
           demandOption: true,
         })
@@ -39,9 +39,6 @@ yargs(hideBin(process.argv))
       console.log(chalk.green("done"));
     }
   )
-  .command('hello', 'Say hello', {}, () => {
-    console.log("Hello, Nimbus!");
-  })
   .demandCommand()
   .help()
   .argv;

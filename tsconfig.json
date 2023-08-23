@@ -1,9 +1,33 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./lib"
+    "outDir": "./lib",
+    // "rootDirs": ["src"],
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "target": "es2019",
+    "sourceMap": true,
+    "strict": true,
+    "lib": [
+      "es2019"
+    ],
+    // checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noLib": false,
+    "skipLibCheck": true,
   },
   "include": [
     "./src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
   ]
  }
