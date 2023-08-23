@@ -44,5 +44,14 @@ Options:
 
 Example
 ```sh
-
+nimbus gen-otel-json-schema --metadata-dir /path/to/cfg-metadata --output-file otel-schema.json
 ```
+
+Output
+```sh
+Generating JSON schema from /Users/kevinlin/code/_ref/otel/opentelemetry-collector-contrib/cmd/configschema/cfg-metadata and saving to undefined
+error parsing {"name":"traces","type":"datasetexporter.TracesSettings","kind":"struct"}
+error parsing {"name":"metrics_exporter","type":"component.ID","kind":"struct","doc":"MetricsExporter specifies the name of the metrics exporter to be used when\nexporting stats metrics.\n"}
+```
+
+> NOTE: there currently is an issue with two components: `exporter/dataset` and `exporter//datadog` as they have `struct` arguments that have no child `fields` defined. This causes an error when generating the schema.
